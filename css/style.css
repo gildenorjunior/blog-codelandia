@@ -1,16 +1,16 @@
 @font-face {
-	font-family: Inter-Medium;
-	src: url('../fontes/Inter-Medium.ttf');
+  font-family: Inter-Medium;
+  src: url('../fontes/Inter-Medium.ttf');
 }
 
 @font-face {
-	font-family: Inter-Regular;
-	src: url('../fontes/Inter-Regular.ttf');
+  font-family: Inter-Regular;
+  src: url('../fontes/Inter-Regular.ttf');
 }
 
 @font-face {
-	font-family: LexendDeca-Regular;
-	src: url('../fontes/LexendDeca-Regular.ttf');
+  font-family: LexendDeca-Regular;
+  src: url('../fontes/LexendDeca-Regular.ttf');
 }
 
 :root {
@@ -38,7 +38,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-
   background-image: var(--linear);
   width: 100%;
   height: 250px;
@@ -47,7 +46,6 @@ header {
 .cabecalho {
   width: 901px;
   height: 168px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -56,8 +54,18 @@ header {
 .cabecalho__menu {
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
   font-size: 24px;
+  color: white;
+}
+
+.cabecalho__menu #icone-tema {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.cabecalho__menu a {
+  text-decoration: none;
   color: white;
 }
 
@@ -74,13 +82,12 @@ header {
   background: rgba(255, 255, 255, 0.2);
   border: none;
   outline: none;
-
   font-family: LexendDeca-Regular;
   font-size: 16px;
   color: var(--white);
 }
 
-.cabecalho__buscar input::placeholder{
+.cabecalho__buscar input::placeholder {
   color: var(--text);
 }
 
@@ -114,14 +121,16 @@ main {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 22px;
-
   color: var(--text);
+}
+
+.post__cabecalho #icon-curtida {
+  cursor: pointer;
 }
 
 .post__corpo {
   display: flex;
   flex-direction: column;
-
   line-height: 28px;
 }
 
@@ -131,6 +140,53 @@ main {
   margin-bottom: 5px;
 }
 
-.post__corpo > p {
+.post__corpo>p {
   color: var(--text);
+}
+
+.ping {
+	-webkit-animation: ping 800ms ease-in ;
+	        animation: ping 800ms ease-in ;
+}
+
+ @-webkit-keyframes ping {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    opacity: 0.8;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@keyframes ping {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    opacity: 0.8;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  main, header {
+    padding: 0px 40px;
+  }
 }
