@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/c23ccaaf7d.js" crossorigin="anonymous"></script>
     <title>Desafio 1 - Blog</title>
 </head>
 
-<body>
+<body data-tema="light">
     <header>
         <nav class="cabecalho">
             <div class="cabecalho__menu">
                 <a href="#">Codelândia</a>
                 <div>
                     <a href="#">Blog</a>
-                    <img src="./assets/sun.svg" id="icone-tema" alt="troca de tema">
+                    <i class="fa fa-sun-o" id="icone-tema" data-icon-tema aria-hidden="true"></i>
                 </div>
             </div>
 
@@ -33,9 +34,10 @@
                 <article>
                     <div class="post__cabecalho">
                         <span>02 de jul, 2021</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" alt="coracao de curtida" id="icon-curtida" data-icon-curtida width="24" height="24" viewBox="0 0 24 24"
-                            stroke="rgb(87, 74, 232)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-heart" fill="white">
+                        <svg xmlns="http://www.w3.org/2000/svg" alt="coracao de curtida" id="icon-curtida"
+                            data-icon-curtida width="24" height="24" viewBox="0 0 24 24" stroke="rgb(87, 74, 232)"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-heart" fill="none">
                             <path
                                 d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                             </path>
@@ -55,9 +57,10 @@
                 <article>
                     <div class="post__cabecalho">
                         <span>02 de jul, 2021</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" alt="coracao de curtida" id="icon-curtida" data-icon-curtida width="24" height="24" viewBox="0 0 24 24"
-                            stroke="rgb(87, 74, 232)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-heart" fill="white">
+                        <svg xmlns="http://www.w3.org/2000/svg" alt="coracao de curtida" id="icon-curtida"
+                            data-icon-curtida width="24" height="24" viewBox="0 0 24 24" stroke="rgb(87, 74, 232)"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-heart" fill="none">
                             <path
                                 d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                             </path>
@@ -77,9 +80,10 @@
                 <article>
                     <div class="post__cabecalho">
                         <span>02 de jul, 2021</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" alt="coracao de curtida" id="icon-curtida" data-icon-curtida width="24" height="24" viewBox="0 0 24 24"
-                            stroke="rgb(87, 74, 232)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-heart" fill="white">
+                        <svg xmlns="http://www.w3.org/2000/svg" alt="coracao de curtida" id="icon-curtida"
+                            data-icon-curtida width="24" height="24" viewBox="0 0 24 24" stroke="rgb(87, 74, 232)"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-heart" fill="none">
                             <path
                                 d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                             </path>
@@ -99,9 +103,10 @@
                 <article>
                     <div class="post__cabecalho">
                         <span>02 de jul, 2021</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" alt="coracao de curtida" id="icon-curtida" data-icon-curtida width="24" height="24" viewBox="0 0 24 24"
-                            stroke="rgb(87, 74, 232)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-heart" fill="white">
+                        <svg xmlns="http://www.w3.org/2000/svg" alt="coracao de curtida" id="icon-curtida"
+                            data-icon-curtida width="24" height="24" viewBox="0 0 24 24" stroke="rgb(87, 74, 232)"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-heart" fill="none">
                             <path
                                 d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
                             </path>
@@ -119,6 +124,18 @@
             </section>
         </div>
     </main>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '30px',
+            duration: 1500,
+            reset: false
+        });
+
+        ScrollReveal().reveal('.post__container', { delay: 50 });
+    </script>
 
     <script src="./js/script.js"></script>
 </body>
